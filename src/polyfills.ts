@@ -83,3 +83,8 @@ import 'zone.js/dist/zone';  // Included with Angular CLI.
 /***************************************************************************************************
  * APPLICATION IMPORTS
  */
+
+ /** Fix issue while testing app
+    https://github.com/ionic-team/ionic/issues/17411
+*/
+import '@webcomponents/webcomponentsjs/custom-elements-es5-adapter.js';
