@@ -20,16 +20,3 @@ test('display 3 tabs', async t => {
     .expect(thirdTab.find('ion-icon').getAttribute('name')).eql('send')
     .expect(thirdTab.find('ion-label').innerText).eql('Tab Three');
 });
-
-test('click on ionic documentation redirect to ionic website', async t => {
-
-
-  const ionicDocLink = Selector('ion-list ion-item').nth(0);
-
-  await t
-    .click(ionicDocLink);
-
-  const location = await t.eval(() => window.location);
-  await t.expect(location.href).eql('https://ionicframework.com/docs');
-
-});
