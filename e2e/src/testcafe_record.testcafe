@@ -1,0 +1,131 @@
+{
+    "fixtures": [
+        {
+            "name": "TestCafe Record",
+            "pageUrl": "http://localhost:8100/tabs/tab1",
+            "tests": [
+                {
+                    "name": "Click on tabs",
+                    "commands": [
+                        {
+                            "selector": {
+                                "type": "js-expr",
+                                "value": "Selector('[name=\"apps\"].hydrated')"
+                            },
+                            "studio": {
+                                "selectors": [
+                                    {
+                                        "rawSelector": {
+                                            "type": "js-expr",
+                                            "value": "Selector('[name=\"apps\"].hydrated')"
+                                        },
+                                        "ruleType": "attr"
+                                    },
+                                    {
+                                        "rawSelector": {
+                                            "type": "js-expr",
+                                            "value": "Selector('#tab-button-tab2').find('[name=\"apps\"].hydrated')"
+                                        },
+                                        "ruleType": "id-attr"
+                                    },
+                                    {
+                                        "rawSelector": {
+                                            "type": "js-expr",
+                                            "value": "Selector('[class^=\"tab-has-label tab-has-icon tab-layout-icon-top ion\"]').nth(1).find('[name=\"apps\"].hydrated')"
+                                        },
+                                        "ruleType": "attr-attr"
+                                    },
+                                    {
+                                        "rawSelector": {
+                                            "type": "js-expr",
+                                            "value": "Selector('#tab-button-tab2').find('ion-icon')"
+                                        },
+                                        "ruleType": "id-dom"
+                                    },
+                                    {
+                                        "rawSelector": {
+                                            "type": "js-expr",
+                                            "value": "Selector('[class^=\"tab-has-label tab-has-icon tab-layout-icon-top ion\"]').nth(1).nth(1).find('ion-icon')"
+                                        },
+                                        "ruleType": "attr-dom"
+                                    },
+                                    {
+                                        "rawSelector": {
+                                            "type": "js-expr",
+                                            "value": "Selector('body').find('app-root').find('ion-app').find('ion-router-outlet').find('app-tabs').find('ion-tabs').find('ion-tab-bar').find('ion-tab-button').nth(1).find('ion-icon')"
+                                        },
+                                        "ruleType": "dom"
+                                    }
+                                ],
+                                "useOffsets": false,
+                                "offsetX": 11,
+                                "offsetY": 16
+                            },
+                            "options": {},
+                            "type": "click",
+                            "callsite": "1"
+                        },
+                        {
+                            "selector": {
+                                "type": "js-expr",
+                                "value": "Selector('[name=\"send\"].hydrated')"
+                            },
+                            "studio": {
+                                "selectors": [
+                                    {
+                                        "rawSelector": {
+                                            "type": "js-expr",
+                                            "value": "Selector('[name=\"send\"].hydrated')"
+                                        },
+                                        "ruleType": "attr"
+                                    },
+                                    {
+                                        "rawSelector": {
+                                            "type": "js-expr",
+                                            "value": "Selector('#tab-button-tab3').find('[name=\"send\"].hydrated')"
+                                        },
+                                        "ruleType": "id-attr"
+                                    },
+                                    {
+                                        "rawSelector": {
+                                            "type": "js-expr",
+                                            "value": "Selector('[class^=\"tab-has-label tab-has-icon tab-layout-icon-top ion\"]').nth(2).find('[name=\"send\"].hydrated')"
+                                        },
+                                        "ruleType": "attr-attr"
+                                    },
+                                    {
+                                        "rawSelector": {
+                                            "type": "js-expr",
+                                            "value": "Selector('#tab-button-tab3').find('ion-icon')"
+                                        },
+                                        "ruleType": "id-dom"
+                                    },
+                                    {
+                                        "rawSelector": {
+                                            "type": "js-expr",
+                                            "value": "Selector('[class^=\"tab-has-label tab-has-icon tab-layout-icon-top ion\"]').nth(2).nth(2).find('ion-icon')"
+                                        },
+                                        "ruleType": "attr-dom"
+                                    },
+                                    {
+                                        "rawSelector": {
+                                            "type": "js-expr",
+                                            "value": "Selector('body').find('app-root').find('ion-app').find('ion-router-outlet').find('app-tabs').find('ion-tabs').find('ion-tab-bar').find('ion-tab-button').nth(2).find('ion-icon')"
+                                        },
+                                        "ruleType": "dom"
+                                    }
+                                ],
+                                "useOffsets": false,
+                                "offsetX": 8,
+                                "offsetY": 7
+                            },
+                            "options": {},
+                            "type": "click",
+                            "callsite": "2"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
