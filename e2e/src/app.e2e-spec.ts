@@ -24,10 +24,10 @@ test('display 3 tabs', async t => {
 test('click on ionic documentation redirect to ionic website', async t => {
 
 
-  const secondTab = Selector('ion-list ion-item').nth(0);
+  const ionicDocLink = Selector('ion-list ion-item').nth(0);
 
   await t
-    .click(secondTab);
+    .click(ionicDocLink);
 
   const location = await t.eval(() => window.location);
   await t.expect(location.href).eql('https://ionicframework.com/docs');
